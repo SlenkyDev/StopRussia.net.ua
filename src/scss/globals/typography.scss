@@ -10,7 +10,7 @@ h3 {
 a,
 a:visited,
 a:active {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 h1 {
@@ -29,12 +29,14 @@ h2 {
     color: white;
     font-weight: bold;
     font-family: var(--font-body);
+    text-decoration: underline;
 }
 
 h3 {
     color: white;
     font-weight: bold;
     font-family: var(--font-body);
+    text-decoration: underline;
 }
 
 p {
@@ -52,4 +54,24 @@ li {
     section {
         margin: rem(20) 0;
     }
+}
+
+pre {
+    color: white;
+}
+
+.yellow {
+    color: var(--yellow);
+}
+.blue {
+    color: var(--blue);
+}
+
+.stronger {
+    font-weight: 600;
+}
+
+.italic {
+    font-style: italic;
+    color: var(--gray);
 }

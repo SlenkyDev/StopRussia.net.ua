@@ -18,7 +18,7 @@
         <script type="module" src="/src/js/script.js"></script>
     </head>
     <main class="container">
-        <h1>Russia HTML DoS</h1>
+        <h1>Russia <span class="yellow">HTML</span> DoS</h1>
         <article class="subtitle">
             <section>
                 <h2>English version</h2>
@@ -33,8 +33,8 @@
                 </p>
             </section>
             <section>
-                <h2 class="sub">Русская версия</h2>
-                <p class="sub">
+                <h2>Русская версия</h2>
+                <p>
                     "Официальные" новости в рф - это театр абсурда и мы считаем,
                     что это нужно остановить! Пожалуйста, просто откройте эту
                     страницу на своём компьютере и оставтье вкладку открытой,
@@ -43,8 +43,8 @@
                 </p>
             </section>
             <section>
-                <h2 class="sub">Українська версія</h2>
-                <p class="sub">
+                <h2>Українська версія</h2>
+                <p>
                     Офіційні новини в рф - це театр абсурду і ми вважаємо, що це
                     треба зупинити! Будь ласка, просто залиште відкритою цю
                     сторінку на своєму комп'ютері щоб вона автоматично
@@ -52,15 +52,20 @@
                 </p>
             </section>
         </article>
-        <h2 class="desc">
-            Here is the stats of your session (the links and the number of the
-            requests that were sent from your browser):<br />
-            Failed to fetch is normal - if any site has that - that means their
-            servers are under load and are dropping packets - which is the goal!
-        </h2>
     </main>
-    <div id="stats" class="stats">
-        <pre>
+    <article class="container">
+        <p class="desc">
+            Here is the stats of your session
+            <span class="italic"
+                >(the links and the number of the requests that were sent from
+                your browser)</span
+            >:<br />
+            <span class="blue stronger">Failed to fetch is normal</span> - if
+            any site has that - that means their servers are under load and are
+            dropping packets - which is the goal!
+        </p>
+        <div id="stats" class="stats">
+            <pre>
                 {
                   "https://lenta.ru/": {
                     "number_of_requests": 0,
@@ -153,15 +158,16 @@
             "error_message": "Failed to fetch"
           }
         }</pre
-        >
-    </div>
-    <div id="errors"></div>
-    <h1>
-        If you missed it, BBC NEWS: Ukraine conflict:
-        <a href="https://www.bbc.com/news/world-europe-60503037"
-            >Russian forces attack from three sides</a
-        >
-    </h1>
+            >
+        </div>
+        <div id="errors"></div>
+        <h1>
+            If you missed it, BBC NEWS: Ukraine conflict:
+            <a href="https://www.bbc.com/news/world-europe-60503037"
+                >Russian forces attack from three sides</a
+            >
+        </h1>
+    </article>
     <script>
         var targets = {
             "https://lenta.ru": {
