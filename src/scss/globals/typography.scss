@@ -14,7 +14,7 @@ a:active {
 }
 
 h1 {
-    margin: rem(30);
+    margin: rem(70);
     color: white;
     font-weight: bolder;
     font-family: var(--font-body);
@@ -29,20 +29,30 @@ h2 {
     color: white;
     font-weight: bold;
     font-family: var(--font-body);
-    text-decoration: underline;
+    font-size: rem(25);
+    @include breakpoint(medium) {
+        font-size: rem(35);
+    }
 }
 
 h3 {
     color: white;
     font-weight: bold;
     font-family: var(--font-body);
-    text-decoration: underline;
+    font-size: rem(25);
+    @include breakpoint(medium) {
+        font-size: rem(35);
+    }
 }
 
 p {
     color: white;
     font-weight: light;
     font-family: var(--font-body);
+    font-size: rem(15);
+    @include breakpoint(medium) {
+        font-size: rem(18);
+    }
 }
 
 li {
@@ -57,7 +67,7 @@ li {
 }
 
 pre {
-    color: white;
+    color: var(--gray);
 }
 
 .yellow {
@@ -74,4 +84,28 @@ pre {
 .italic {
     font-style: italic;
     color: var(--gray);
+}
+
+.news {
+    p {
+        margin: rem(30);
+        color: white;
+        font-weight: bolder;
+        font-family: var(--font-body);
+        text-align: center;
+        font-size: rem(25);
+        @include breakpoint(medium) {
+            font-size: rem(50);
+        }
+        a,
+        a:visited,
+        a:active {
+            text-decoration: underline;
+            color: var(--blue);
+        }
+    }
+}
+
+.desc {
+    margin-top: 5rem;
 }
