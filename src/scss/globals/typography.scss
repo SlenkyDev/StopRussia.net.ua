@@ -1,0 +1,43 @@
+@use "../util" as *;
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    line-height: 1.1;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+h1 {
+    color: white;
+    font-weight: bolder;
+    font-family: var(--font-body);
+}
+
+h2 {
+    color: white;
+    font-weight: bold;
+    font-family: var(--font-body);
+}
+
+h3 {
+    color: white;
+    font-weight: bold;
+    font-family: var(--font-body);
+}
+
+p {
+    color: white;
+    font-weight: light;
+    font-family: var(--font-body);
+}
+
+li {
+    list-style: disc;
+    color: wheat;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "vite",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "npm run build && vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.42.1",
+    "vite": "^2.5.4"
+  }
+}
