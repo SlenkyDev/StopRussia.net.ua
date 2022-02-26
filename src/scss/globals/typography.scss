@@ -14,10 +14,15 @@ a:active {
 }
 
 h1 {
+    margin: rem(30);
     color: white;
     font-weight: bolder;
     font-family: var(--font-body);
     text-align: center;
+    font-size: rem(35);
+    @include breakpoint(medium) {
+        font-size: rem(50);
+    }
 }
 
 h2 {
@@ -41,4 +46,10 @@ p {
 li {
     list-style: disc;
     color: wheat;
+}
+
+.subtitle {
+    section {
+        margin: rem(20) 0;
+    }
 }
