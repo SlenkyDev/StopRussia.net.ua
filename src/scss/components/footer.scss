@@ -1,0 +1,7 @@
+@use "../util" as *;
+footer {
+    margin-top: rem(25);
+    padding: rem(30);
+    text-align: center;
+    background-color: black;
+}

