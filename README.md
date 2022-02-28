@@ -18,8 +18,8 @@ then run
 ```
 npm run build
 ```
-If no errors were made, the built files are going to be located within the /dir folder.
-Push the entire root directory, not just the /dir folder.
+If no errors were made, the built files are going to be located within the /dist folder.
+Push the entire root directory, not just the /dist folder.
 
 Please make sure to make your original changes within the root index.html file.
 
