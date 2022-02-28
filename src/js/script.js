@@ -117,38 +117,6 @@ let targets = {
         number_of_requests: 0,
         number_of_errored_responses: 0,
     },
-    "https://cz.sputniknews.com/": {
-        number_of_requests: 0,
-        number_of_errored_responses: 0,
-    },
-    "https://sputniknews.com/": {
-        number_of_requests: 0,
-        number_of_errored_responses: 0,
-    },
-    "https://www.parlamentnilisty.cz/": {
-        number_of_requests: 0,
-        number_of_errored_responses: 0,
-    },
-    "https://zemavek.sk/": {
-        number_of_requests: 0,
-        number_of_errored_responses: 0,
-    },
-    "https://hlavnespravy.sk/": {
-        number_of_requests: 0,
-        number_of_errored_responses: 0,
-    },
-    "https://www.rudyprapor.cz/": {
-        number_of_requests: 0,
-        number_of_errored_responses: 0,
-    },
-    "https://aliancenarodnichsil.cz/": {
-        number_of_requests: 0,
-        number_of_errored_responses: 0,
-    },
-    "http://otevrisvoumysl.cz/": {
-        number_of_requests: 0,
-        number_of_errored_responses: 0,
-    },
 };
 
 let statsEl = document.getElementById('stats');
