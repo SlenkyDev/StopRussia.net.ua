@@ -159,6 +159,7 @@ async function fetchWithTimeout(resource, options) {
     const id = setTimeout(() => controller.abort(), options.timeout);
     return fetch(resource, {
         signal: controller.signal,
+        referrerPolicy: "no-referrer",
     })
         .then((response) => {
             clearTimeout(id);
