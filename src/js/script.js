@@ -98,6 +98,7 @@ let targets = {
         number_of_errored_responses: 0,
     },
     "https://rubaltic.ru/": {
+        pattern: "https://www.rubaltic.ru/search/?q=%STR",
         number_of_requests: 0,
         number_of_errored_responses: 0,
     },
