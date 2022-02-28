@@ -21,6 +21,11 @@ let targets = {
         number_of_requests: 0,
         number_of_errored_responses: 0,
     },
+    "https://www.interfax.ru/": {
+        pattern: "https://www.interfax.ru/search/?sw=%STR",
+        number_of_requests: 0,
+        number_of_errored_responses: 0,
+    },
     "https://www.rt.com/": {
         number_of_requests: 0,
         number_of_errored_responses: 0,
