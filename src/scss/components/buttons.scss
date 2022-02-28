@@ -1,1 +1,50 @@
 @use "../util" as *;
+
+.twitter-cta-container {
+    margin: rem(50);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .twitter-share-cta {
+        background-color: #1da1f2;
+        color: white;
+        text-decoration: none;
+        font-size: rem(35);
+        padding: rem(15) rem(40);
+        border-radius: rem(60);
+        font-family: var(--font-body);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        a,
+        a:visited,
+        a:active {
+            text-decoration: underline;
+            color: white;
+        }
+        img {
+            width: rem(45);
+            height: rem(45);
+            margin-right: rem(5);
+        }
+    }
+    @include breakpoint(medium) {
+        .twitter-share-cta {
+            font-size: rem(40);
+            padding: rem(15) rem(40);
+            border-radius: rem(60);
+            a,
+            a:visited,
+            a:active {
+                text-decoration: underline;
+                color: white;
+            }
+            img {
+                width: rem(40);
+                height: rem(40);
+                margin-right: rem(4);
+            }
+        }
+    }
+}

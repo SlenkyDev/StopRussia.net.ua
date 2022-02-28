@@ -69,6 +69,10 @@ li {
 
 pre {
     color: var(--gray);
+    font-size: rem(10);
+    @include breakpoint(medium) {
+        font-size: rem(12);
+    }
 }
 
 .yellow {
