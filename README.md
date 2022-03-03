@@ -8,23 +8,5 @@ You can self host this tool under your own domain if you wish, but please, keep 
 
 ## Contributing
 
-Most pull-requests that add something of value are accepted, but please, if possible, build the site in advance before submiting the pull request.
-
-In order to build the site, launch your terminal inside the cloned repository and run
-```
-npm i
-```
-then run
-```
-npm run build
-```
-If no errors were made, the built files are going to be located within the /dist folder.
-Push the entire root directory, not just the /dist folder.
-
-Please make sure to make your original changes within the root index.html file.
-
-If you wish, you can also run this tool locally after issuing the `npm i` command using
-```
-npm run dev
-```
-A localhost dev server will be created, you can access that and attack locally.
+Before contributing, make sure the PR doesn't already exist. If not, feel free to open it.  
+Please check [contributing.md](.github/CONTRIBUTING.md)

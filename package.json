@@ -2,11 +2,18 @@
   "name": "vite",
   "version": "0.0.0",
   "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "dev": "vite",
     "build": "vite build",
     "serve": "npm run build && vite preview"
   },
   "devDependencies": {
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
     "sass": "^1.42.1",
     "vite": "^2.5.4"
   }
