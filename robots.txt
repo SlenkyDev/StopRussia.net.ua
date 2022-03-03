@@ -1,0 +1,3 @@
+Sitemap: https://stoprussia.net.ua/sitemap.xml
+User-Agent: *
+Allow: /
