@@ -8,4 +8,5 @@ You can self host this tool under your own domain if you wish, but please, keep 
 
 ## Contributing
 
-Before contributing, make sure the PR doesn't already exist. If not, feel free to open it.
+Before contributing, make sure the PR doesn't already exist. If not, feel free to open it.  
+Please check [contributing.md](.github/CONTRIBUTING.md)
