@@ -2,7 +2,7 @@
   "name": "vite",
   "version": "0.0.0",
   "scripts": {
-    "lint": "prettier --check . && eslint .",
+    "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "dev": "vite",
     "build": "vite build",
