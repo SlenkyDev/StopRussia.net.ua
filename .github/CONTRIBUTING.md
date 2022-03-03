@@ -13,4 +13,4 @@ ESlint will always throw you a line, and the filename where the error is located
 2. `npm ci`
 3. Update your code.
 4. Run `npm run lint` for check.
-5. Open PR 🎉 (please check [angular committing](https://gist.github.com/brianclements/841ea7bffdb01346392c))
+5. Open PR 🎉 (please check [angular commit formatting](https://gist.github.com/brianclements/841ea7bffdb01346392c))
